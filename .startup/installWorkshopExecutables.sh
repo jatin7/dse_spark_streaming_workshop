@@ -6,8 +6,8 @@
 
 echo "Starting Workshop Executables installation..."
 
-if [ `hostname` == 'node0' ]
-then
+#if [ `hostname` == 'node0' ]
+#then
   echo "Downloading Event Generator..."
   curl -o executables/kafka-event-generator-1.0-SNAPSHOT-jar-with-dependencies.jar 'http://billkellett.net/dse/kafka-event-generator-1.0-SNAPSHOT-jar-with-dependencies.jar' -L   
   echo "... Event Generator download complete."
@@ -20,5 +20,5 @@ then
   curl -o executables/datastax-spark-streaming-dse-jar-with-dependencies.jar 'http://billkellett.net/dse/datastax-spark-streaming-dse-jar-with-dependencies.jar' -L   
   echo "... DSE Event Consumer download complete."
   
-fi
+#fi
 echo "... Finished Workshop Executables Installation."

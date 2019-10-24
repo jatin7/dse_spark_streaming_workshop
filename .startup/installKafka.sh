@@ -6,8 +6,8 @@
 
 echo "Starting Kafka installation..."
 
-if [ `hostname` == 'node0' ]
-then
+#if [ `hostname` == 'node0' ]
+#then
   echo "Downloading Kafka..."
   curl -o kafka_2.12-2.2.0.tgz 'http://billkellett.net/dse/kafka_2.12-2.2.0.tgz' -L   
   echo "... Kafka download complete."
@@ -42,5 +42,5 @@ then
   ./kafka-topics.sh --list --bootstrap-server node0:9092
   sleep 15
   echo "... Kafka configuration verified." 
-fi
+#fi
 echo "... Finished Kafka Installation."

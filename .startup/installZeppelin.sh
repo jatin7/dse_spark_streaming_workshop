@@ -6,8 +6,8 @@
 # Zeppelin distribution (DSE-specific) by doanduyhai http://www.doanduyhai.com/blog/?p=2325
 
 # If we are on node0 install Zeppelin, copy Notebooks and start it up.
-if [ `hostname` == 'node0' ]
-then
+#if [ `hostname` == 'node0' ]
+#then
   echo "Downloading Zeppelin..."
   curl -s -o zeppelin-0.7.1.tar.gz 'http://billkellett.net/dse/zeppelin-0.7.1.tar.gz' -L 2>&1 | tee zeppelin-download.log
   echo "... Zeppelin download complete."
@@ -83,4 +83,4 @@ then
   zeppelin-0.7.1/bin/zeppelin-daemon.sh restart
 
   echo "Finished Zeppelin Install"
-fi
+#fi

@@ -3,8 +3,9 @@
 # DDL for Streaming Workshop
 #
 echo "Starting DDL"
-if [ `hostname` == 'node0' ]
-then
+#if [ `hostname` == 'node0' ]
+#then
+
 
   #Race Condition DSE has not started
   echo "Has DSE Started?"
@@ -33,5 +34,5 @@ then
    cqlsh node0 -f cql/streaming-workshop-ddl.cql
 
    sleep 10s
-fi
+#fi
 echo "Finished DDL"

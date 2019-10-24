@@ -4,8 +4,8 @@
 # Here we create that directory on dsefs
 #
 echo "Starting creation of Spark Checkpoint Directory"
-if [ `hostname` == 'node0' ]
-then
+#if [ `hostname` == 'node0' ]
+#then
 
   #Race Condition DSE has not started
   echo "Has DSE Started?"
@@ -40,5 +40,5 @@ then
    dse fs "mkdir checkpoint/lab3badnews/"   # create checkpoint directory for lab 3 bad news handler
 
    sleep 10s
-fi
+#fi
 echo "Finished creation of Spark Checkpoint Directory"

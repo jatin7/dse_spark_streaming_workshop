@@ -4,10 +4,10 @@
 # May be due to startup order in startup scripts
 # This is temporary until assethub is fixed
 echo "Starting nodetool repair"
-if [ `hostname` == 'node0' ]
-then
+#if [ `hostname` == 'node0' ]
+#then
 
   sudo service opscenterd restart 
 
-fi
+#fi
 echo "Nodetool repair finished"

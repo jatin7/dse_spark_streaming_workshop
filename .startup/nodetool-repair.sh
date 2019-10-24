@@ -3,8 +3,8 @@
 # Nodetool repair for Workshop
 #
 echo "Starting nodetool repair"
-if [ `hostname` == 'node0' ]
-then
+#if [ `hostname` == 'node0' ]
+#then
 
   #Race Condition DSE has not started
   echo "Has DSE Started?"
@@ -34,5 +34,5 @@ then
 
    sleep 10s
   fi
-fi
+#fi
 echo "Finished nodetool repair"
